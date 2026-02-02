@@ -1,0 +1,16 @@
+# Fluent runtime junk
+fluent-*.trn
+cleanup-fluent-*.bat
+
+# Generated journals
+run_*_Re*.jou
+
+# Fluent output (DO NOT COMMIT)
+results/
+*.cas.h5
+*.dat.h5
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

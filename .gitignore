@@ -1,16 +1,30 @@
-# Fluent runtime junk
+# ===============================
+# ANSYS Fluent runtime junk
+# ===============================
 fluent-*.trn
 cleanup-fluent-*.bat
 
-# Generated journals
+# ===============================
+# Generated journals (auto)
+# ===============================
 run_*_Re*.jou
 
-# Fluent output (DO NOT COMMIT)
-results/
-*.cas.h5
-*.dat.h5
-*.log
+# ===============================
+# Results (INTENTIONALLY TRACKED)
+# ===============================
+# We WANT to commit results/, but large files
+# will be handled via Git LFS instead.
+# DO NOT ignore results/ anymore.
 
-# OS
+# ===============================
+# Logs (keep per-case logs)
+# ===============================
+# Allow logs inside results/, but ignore stray logs elsewhere
+*.log
+!results/**/*.log
+
+# ===============================
+# OS junk
+# ===============================
 .DS_Store
 Thumbs.db

@@ -3,7 +3,7 @@
 ; Validated for ANSYS Fluent 2025 R2 (25.2)
 ; ===========================================================
 /file/set-tui-version "25.2"
-/file/read-mesh "MESH_FILE"
+/file/read-case "MESH_FILE"
 
 ; ---------- Models ----------
 /define/models/solver/pressure-based yes
@@ -93,7 +93,7 @@ no
 ; ===========================================================
 
 ; Create surface from interior zone for export
-/surface/zone-surface interior-data interior-fluid_domain
+/surface/zone-surface interior-data fluid_domain
 
 ; Save case and data
 /file/write-case-data "results/MESH_NAME/ReVALUE_RE/bifurcation_ReVALUE_RE.cas.h5"

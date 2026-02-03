@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-set +e
+set -e
 
 # ===========================================================
 # BIFURCATION BATCH SIMULATION - MULTI-MESH
-# Reynolds Numbers: 100 - 2100 (steps of 100)
+# Reynolds Numbers: 50 - 800 (variable steps)
 # Multiple mesh geometries (angle variations)
 # ===========================================================
 
